@@ -17,7 +17,7 @@ All aboard the trouble train!
 ![A screenshot of the trouble train in action.](readme-assets/trouble-train.png)
 
 ### Files:
-* `/simcopter/trouble-train/sim3d2-simcopter-trouble-train.max`
+* `/simcopter/trouble-train/sim3d2-simcopter-trouble-train.max` (replaces `geo/sim3d2.max`)
 
 ### Notes:
 * The trouble train was created by programmatically increasing the y coordinate of the roof vertices of the train car meshes in the `sim3d2.max` file.
@@ -25,6 +25,25 @@ All aboard the trouble train!
 * The trouble train is not without some degree of historical precedent. During the 19th century, three-storey bunk cars saw limited use as part of construction trains in North America.
 ![A three-storey bunk car.](readme-assets/bunk-car.jpg)
 * A video of the trouble train is available [here](readme-assets/trouble-train.mp4).
+
+## Cattle Rustler
+
+What is this, [SimFarm](https://en.wikipedia.org/wiki/SimFarm)?
+
+![A screenshot of the trouble train in action.](readme-assets/cattle-rustler.png)
+
+### Files
+* `/simcopter/cattle-rustler/sim3d2-simcopter-cattle-rustler.max` (replaces `geo/sim3d2.max`)
+* `/simcopter/cattle-rustler/sim3d-simcopter-cattle-rustler.bmp` (replaces `bmp/sim3d.bmp`)
+
+### Notes
+* Replacing the burglar's [coupé utility vehicle](https://en.wikipedia.org/wiki/Coup%C3%A9_utility) with the cow from Streets of SimCity required a few changes:
+  * I extracted the cow texture from Streets' `sim3d.bmp` file and added it to SimCopter's `sim3d.bmp` file using my [Maxis Texture Tool](https://github.com/CahootsMalone/maxis-texture-tool) program.
+  * With a mix of programmatic and manual editing, I extracted the cow mesh from Streets' `sim3d1.max` file and replaced the burglar's car with it in SimCopter's `sim3d2.max` file.
+    * I rotated the cow mesh to make it point forward and changed its texture indices to reference the location of the cow texture in the modified `sim3d.bmp` file.
+    * Replacing the burglar's car with the cow in the `.max` file required a number of changes; see my notes regarding mesh replacement [here](https://github.com/haffmans/Maxis-formats/blob/master/experiments/README.md), specifically the `sim3d2_simcopter_replacement_test_1.max` section.
+* Regrettably, making the cow moo at regular intervals would require code changes.
+* A video of the cattle rustler is available [here](readme-assets/cattle-rustler.mp4).
 
 # Streets of SimCity
 
