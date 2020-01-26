@@ -30,7 +30,7 @@ All aboard the trouble train!
 
 What is this, [SimFarm](https://en.wikipedia.org/wiki/SimFarm)?
 
-![A screenshot of the trouble train in action.](readme-assets/cattle-rustler.png)
+![A cow driving dangerously.](readme-assets/cattle-rustler.png)
 
 ### Files
 * `/simcopter/cattle-rustler/sim3d2-simcopter-cattle-rustler.max` (replaces `geo/sim3d2.max`)
@@ -44,6 +44,19 @@ What is this, [SimFarm](https://en.wikipedia.org/wiki/SimFarm)?
     * Replacing the burglar's car with the cow in the `.max` file required a number of changes; see my notes regarding mesh replacement [here](https://github.com/haffmans/Maxis-formats/blob/master/experiments/README.md), specifically the `sim3d2_simcopter_replacement_test_1.max` section.
 * Regrettably, making the cow moo at regular intervals would require code changes.
 * A video of the cattle rustler is available [here](readme-assets/cattle-rustler.mp4).
+
+## Sensational Statues
+
+Overcome by megalomania, the mayor has flooded the streets with self-propelled statues of himself and banned private vehicles.
+
+![You can't fight city hall.](readme-assets/sensational-statues.png)
+
+### Files
+* `/simcopter/sensational-statues/sim3d2-simcopter-sensational-statues.max` (replaces `geo/sim3d2.max`)
+
+### Notes
+* Random statues are rendered with a coloured base, presumably because the game varies the colour of some instances of a given vehicle model by modifying the palette (or palette indices) when rendering them. Textured faces and those rendered with shading don't seem to be affected.
+![Various base colours.](readme-assets/sensational-statues-1.png)
 
 # Streets of SimCity
 
