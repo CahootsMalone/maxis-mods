@@ -58,6 +58,24 @@ Overcome by megalomania, the mayor has flooded the streets with self-propelled s
 * Random statues are rendered with a coloured base, presumably because the game varies the colour of some instances of a given vehicle model by modifying the palette (or palette indices) when rendering them. Textured faces and those rendered with shading don't seem to be affected.
 ![Various base colours.](readme-assets/sensational-statues-1.png)
 
+## Wanted Wienermobile
+
+Some nefarious hooligan has stolen the [Oscar Mayer Wienermobile](https://en.wikipedia.org/wiki/Wienermobile)!
+
+(This mod replaces the burglar's car with everyone's favourite vehicular tribute to processed meat.)
+
+!["Wiener" takes all.](readme-assets/wienermobile.png)
+
+### Files
+* `/simcopter/wienermobile/sim3d2-simcopter-wienermobile.max` (replaces `geo/sim3d2.max`)
+
+### Notes
+* This model is based on the 1952 version of the wienermobile, which seemed the best fit for SimCopter's style (photos by Wikipedia users Mrmiscellanious \[sic\] and Gregory Varnum).
+![The real wienermobile.](readme-assets/wienermobile-photos.jpg)
+* I created the model of the wienermobile using [Blender](https://www.blender.org/), which I then exported to the SimCopter mesh format using a [Python script](https://github.com/CahootsMalone/maxis-mesh-stuff/blob/master/Python/Blender-export-script/blender-export-script.py) I wrote (Blender has a comprehensive [Python API](https://docs.blender.org/api/current/index.html)).
+![Wienermobile model in Blender.](readme-assets/wienermobile-blender.png)
+* A video of the wienermobile is available [here](readme-assets/wienermobile.mp4).
+
 # Streets of SimCity
 
 None yet.
