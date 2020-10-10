@@ -14,7 +14,7 @@ For example, given a mod file called `sim3d2-simcopter-mod-name.max`, remove the
 
 All aboard the trouble train!
 
-![A screenshot of the trouble train in action.](readme-assets/trouble-train.png)
+![A screenshot of the trouble train in action.](readme-assets/trouble-train.png "A screenshot of the trouble train in action.")
 
 ### Files:
 * `/simcopter/trouble-train/sim3d2-simcopter-trouble-train.max` (replaces `geo/sim3d2.max`)
@@ -23,14 +23,14 @@ All aboard the trouble train!
 * The trouble train was created by programmatically increasing the y coordinate of the roof vertices of the train car meshes in the `sim3d2.max` file.
 * Conveniently, people are still placed on the roof of the train (rather than at the original roof height) during train rescue missions; otherwise they would be impossible to retrieve. Presumably their position is specified relative to one of the roof vertices or the height of the mesh is calculated at runtime.
 * The trouble train is not without some degree of historical precedent. During the 19th century, three-storey bunk cars saw limited use as part of construction trains in North America.
-![A three-storey bunk car.](readme-assets/bunk-car.jpg)
+![A three-storey bunk car.](readme-assets/bunk-car.jpg "A three-storey bunk car.")
 * A video of the trouble train is available [here](readme-assets/trouble-train.mp4).
 
 ## Cattle Rustler
 
 What is this, [SimFarm](https://en.wikipedia.org/wiki/SimFarm)?
 
-![A cow driving dangerously.](readme-assets/cattle-rustler.png)
+![A cow driving dangerously.](readme-assets/cattle-rustler.png "A cow driving dangerously.")
 
 ### Files
 * `/simcopter/cattle-rustler/sim3d2-simcopter-cattle-rustler.max` (replaces `geo/sim3d2.max`)
@@ -49,14 +49,14 @@ What is this, [SimFarm](https://en.wikipedia.org/wiki/SimFarm)?
 
 Overcome by megalomania, the mayor has flooded the streets with self-propelled statues of himself and banned private vehicles.
 
-![You can't fight city hall.](readme-assets/sensational-statues.png)
+![You can't fight city hall.](readme-assets/sensational-statues.png "You can't fight city hall.")
 
 ### Files
 * `/simcopter/sensational-statues/sim3d2-simcopter-sensational-statues.max` (replaces `geo/sim3d2.max`)
 
 ### Notes
 * Random statues are rendered with a coloured base, presumably because the game varies the colour of some instances of a given vehicle model by modifying the palette (or palette indices) when rendering them. Textured faces and those rendered with shading don't seem to be affected.
-![Various base colours.](readme-assets/sensational-statues-1.png)
+![Various base colours.](readme-assets/sensational-statues-1.png "Various base colours.")
 
 ## Wanted Wienermobile
 
@@ -64,18 +64,29 @@ Some nefarious hooligan has stolen the [Oscar Mayer Wienermobile](https://en.wik
 
 (This mod replaces the burglar's car with everyone's favourite vehicular tribute to processed meat.)
 
-!["Wiener" takes all.](readme-assets/wienermobile.png)
+!["Wiener" takes all.](readme-assets/wienermobile.png "\"Wiener\" takes all.")
 
 ### Files
 * `/simcopter/wienermobile/sim3d2-simcopter-wienermobile.max` (replaces `geo/sim3d2.max`)
 
 ### Notes
 * This model is based on the 1952 version of the wienermobile, which seemed the best fit for SimCopter's style (photos by Wikipedia users Mrmiscellanious \[sic\] and Gregory Varnum).
-![The real wienermobile.](readme-assets/wienermobile-photos.jpg)
+![The real wienermobile.](readme-assets/wienermobile-photos.jpg "The real wienermobile.")
 * I created the model of the wienermobile using [Blender](https://www.blender.org/), which I then exported to the SimCopter mesh format using a [Python script](https://github.com/CahootsMalone/maxis-mesh-stuff/blob/master/Python/Blender-export-script/blender-export-script.py) I wrote (Blender has a comprehensive [Python API](https://docs.blender.org/api/current/index.html)).
-![Wienermobile model in Blender.](readme-assets/wienermobile-blender.png)
+![My wienermobile model in Blender.](readme-assets/wienermobile-blender.png "My wienermobile model in Blender.")
 * A video of the wienermobile is available [here](readme-assets/wienermobile.mp4).
 
 # Streets of SimCity
 
-None yet.
+## Custom Scenario Demo
+
+This isn't technically a mod, but I reverse-engineered the binary format used to store scenarios, wrote some Python scripts to faciliate the creation of new scenarios, and made a little demonstration scenario.
+
+![Would you say they're... going rogue?](readme-assets/custom-scenario-demo-rogues.png "Would you say they're... going rogue?")
+
+### Files
+* `CustomScenarioDemo.scn` (download [here](https://github.com/CahootsMalone/maxis-streets-scenario-stuff/blob/master/scripts/scenario-creation/CustomScenarioDemo.scn)): place this file in the `<Streets of SimCity directory>\scenarios\Movie` folder.
+* `CustomScenarioDemo.sc2` (download [here](https://github.com/CahootsMalone/maxis-streets-scenario-stuff/blob/master/scripts/scenario-creation/CustomScenarioDemo.sc2)): the SimCity 2000 city file for the custom scenario. Place this file in the `<Streets of SimCity directory>\Cities` folder.
+
+### Notes
+* Want to create your own scenarios? Read [this](https://github.com/CahootsMalone/maxis-streets-scenario-stuff/blob/master/README.md).
