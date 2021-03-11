@@ -8,6 +8,16 @@ Install each mod by replacing the appropriate file(s) in the `geo` folder (for `
 
 For example, given a mod file called `sim3d2-simcopter-mod-name.max`, remove the original `sim3d2.max` file from SimCopter's `geo` folder, rename the mod file to remove the suffix, and place a copy of it in the `geo` folder to replace the original `sim3d2.max` file.
 
+# Mod List
+
+* SimCopter
+  * [Trouble Train](#trouble-train)
+  * [Cattle Rustler](#cattle-rustler)
+  * [Sensational Statues](#sensational-statues)
+  * [Wanted Wienermobile](#wanted-wienermobile)
+* Streets of SimCity
+  * [Custom Scenario Demo](#custom-scenario-demo)
+
 # SimCopter
 
 ## Trouble Train
