@@ -17,6 +17,7 @@ For example, given a mod file called `sim3d2-simcopter-mod-name.max`, remove the
   * [Wanted Wienermobile](#wanted-wienermobile)
 * Streets of SimCity
   * [Custom Scenario Demo](#custom-scenario-demo)
+  * [Elevated Highways](#elevated-highways)
 
 # SimCopter
 
@@ -100,3 +101,25 @@ This isn't technically a mod, but I reverse-engineered the binary format used to
 
 ### Notes
 * Want to create your own scenarios? Read [this](https://github.com/CahootsMalone/maxis-streets-scenario-stuff/blob/master/README.md).
+
+## Elevated Highways
+
+Highways that more closely resemble the ones depicted in SimCity 2000.
+
+![Elevated highways](readme-assets/elevated-highways.png "Elevated highways")
+
+Comparison (original models on the left; the original on-ramps are quite strange):
+
+![Comparison](readme-assets/elevated-highways-comparison.png "Comparison")
+
+### Files
+* [`/streets/elevated-highways/SIM3D1-streets-elevated-highways.MAX`](streets/elevated-highways/SIM3D1-streets-elevated-highways.MAX) (replaces `GEO/SIM3D1.MAX`)
+* [`/streets/elevated-highways/SIM3D3-streets-elevated-highways.MAX`](streets/elevated-highways/SIM3D3-streets-elevated-highways.MAX) (replaces `GEO/SIM3D3.MAX`)
+
+### Notes
+* My original design used straight support columns rather than the tapered ones in the final mod. Although the straight columns were a better match for the sprites in SimCity 2000, they were affected by the poor depth culling in Streets (both Streets and SimCopter seem to have a fairly low-resolution depth buffer) and ended up being rather unsightly (screenshot below). The tapered supports result in a mesh that's closer to  being convex and less susceptible to this problem.
+![The depth culling problem that affected the original design.](readme-assets/elevated-highways-depth-culling-issues.png "The depth culling problem that affected the original design.")
+* As shown in the screenshot below, the deck of the new highway bridge model has no bottom face. Collision volumes for the highway models appear to be generated dynamically (e.g., the new on-ramp model doesn't have a separate collision mesh and [the model format has no way to specify one](https://github.com/CahootsMalone/maxis-mesh-stuff/blob/master/Info/Maxis-Mesh-Format.md#object-objx)); when a bottom face was included for the bridge deck, the deck wasn't solid (vehicles simply fell through it). I tried various alternative geometries but removing the bottom face was the only solution I found.
+![The new bridge model has no bottom face.](readme-assets/elevated-highways-no-bottom-face-on-bridge.png "The new bridge model has no bottom face.")
+* The collision volumes generated for overpass models don't account for the road passing beneath the highway; the result is that vehicles attempting to travel underneath the highway are thrown into the air. This is shown near the end of the video linked below. 
+* A video demonstrating this mod is available [here](readme-assets/elevated-highways.mp4).
