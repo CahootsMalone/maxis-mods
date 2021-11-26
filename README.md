@@ -15,6 +15,7 @@ For example, given a mod file called `sim3d2-simcopter-mod-name.max`, remove the
   * [Cattle Rustler](#cattle-rustler)
   * [Sensational Statues](#sensational-statues)
   * [Wanted Wienermobile](#wanted-wienermobile)
+  * [Ridiculous Rodents](#ridiculous-rodents)
 * Streets of SimCity
   * [Custom Scenario Demo](#custom-scenario-demo)
   * [Elevated Highways](#elevated-highways)
@@ -86,6 +87,21 @@ Some nefarious hooligan has stolen the [Oscar Mayer Wienermobile](https://en.wik
 * I created the model of the wienermobile using [Blender](https://www.blender.org/), which I then exported to the SimCopter mesh format using a [Python script](https://github.com/CahootsMalone/maxis-mesh-stuff/blob/master/Python/Blender-export-script/blender-export-script.py) I wrote (Blender has a comprehensive [Python API](https://docs.blender.org/api/current/index.html)).
 ![My wienermobile model in Blender.](readme-assets/wienermobile-blender.png "My wienermobile model in Blender.")
 * A video of the wienermobile is available [here](readme-assets/wienermobile.mp4).
+
+## Ridiculous Rodents
+
+The rat from [3D Movie Maker](https://en.wikipedia.org/wiki/3D_Movie_Maker) pays a visit to SimCopter.
+
+!["Oh no! A rat!"](readme-assets/ridiculous-rodents.png "\"Oh no! A rat!\"")
+
+### Files
+* `/simcopter/ridiculous-rodents/sim3d2-simcopter-rats.max` (replaces `geo/sim3d2.max`)
+* `/simcopter/ridiculous-rodents/sim3d-simcopter-rats.bmp` (replaces `bmp/sim3d.bmp`)
+
+### Notes
+* This mod replaces all civilian vehicles with Fabrice the rat from 3D Movie Maker. Like SimCopter, 3D Movie Maker was a piece of software I greatly enjoyed as a child.
+* See [this repo](https://github.com/CahootsMalone/3d-movie-maker-stuff) for my reverse engineering work related to 3D Movie Maker, including [the script used to process the binary files containing the rat model](https://github.com/CahootsMalone/3d-movie-maker-stuff/blob/master/scripts/rat-to-wavefront-obj.py).
+* A video of the rats in action is available [here](readme-assets/ridiculous-rodents.mp4).
 
 # Streets of SimCity
 
