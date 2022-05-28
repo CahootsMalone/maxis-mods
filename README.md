@@ -2,7 +2,7 @@
 
 Silly little mods for SimCopter and Streets of SimCity.
 
-Recommended for use with [SimCopterX](http://alekasm.com/scx.html) or [SimStreetsX](http://alekasm.com/ssx.html), which not only patch both games to ensure reliable operation when run under modern versions of Windows but also ensure that they use local resource files.
+Recommended for use with [SimCopterX](http://krimsky.net/patchers/scx.html) or [SimStreetsX](http://krimsky.net/patchers/ssx.html), which not only patch both games to ensure reliable operation when run under modern versions of Windows but also ensure that they use local resource files.
 
 Install each mod by replacing the appropriate file(s) in the `geo` folder (for `.max` files) and/or `bmp` folder (for `.bmp` files) with those provided.
 
